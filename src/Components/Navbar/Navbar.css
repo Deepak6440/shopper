@@ -1,0 +1,141 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 1px 3px -2px black;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.nav-logo p {
+    color: #171717;
+    font-size: 38px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: #626262;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-menu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: #ff4141;
+}
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+   gap: 10px;
+}
+
+.nav-login-cart button{
+  width: 132px;
+  height: 48px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+    border-radius: 75px;
+    color: #515151;
+
+}
+.nav-login-cart button:active
+{
+    background: #171717;
+    color: white;
+}
+.nav-logo a {
+  text-decoration: none;
+}
+.nav-menu a{
+  color: black;
+}
+
+.nav-cart-count
+{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -39px;
+    margin-left: -11px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: red;
+    color: white;
+}
+
+/* .nav-login-cart button :hover {
+  background: black;
+  color: white;
+  
+} */
+.menu-icon {
+    display: none;
+  }
+
+  .nav-elements.false {
+    display: flex;
+    gap: 10px;
+  }
+
+  @media (max-width: 600px) {
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .nav-elements {
+      position: absolute;
+      right: 0;
+      top: 60px;
+      background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+      width: 0px;
+      height: calc(100vh - 60px);
+      transition: all 0.3s ease-in;
+      overflow: hidden;
+    }
+  
+    .nav-elements.active {
+      width: 270px;
+    }
+  
+    .nav-elements ul {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+  
+    .nav-elements ul li {
+      margin-right: unset;
+      margin-top: 22px;
+    }
+
+    .nav-menu {
+      gap: 5px;
+    }
+    .nav-login-cart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    
+  }
